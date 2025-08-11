@@ -47,7 +47,9 @@ function applyTheme(theme) {
   store.set('theme', theme);
   // update toggle UI
   const toggle = $('#themeToggle');
-  toggle.classList.toggle('on', theme === 'dark');
+  const isOn = theme === 'dark';
+  toggle.classList.toggle('on', isOn);
+  toggle.setAttribute('aria-checked', isOn ? 'true' : 'false');
 }
 
 function toggleTheme() {
@@ -224,4 +226,3 @@ document.addEventListener('DOMContentLoaded', () => {
   setupInteractions();
   load();
 });
-
