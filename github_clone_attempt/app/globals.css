@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[data-theme='light'] {
+  /* RGB triples to support Tailwind opacity modifiers */
+  --bg: 251 251 253;     /* #fbfbfd */
+  --fg: 10 10 10;        /* #0a0a0a */
+  --muted: 107 114 128;  /* #6b7280 */
+  --card: 255 255 255;   /* #ffffff */
+  --border: 229 231 235; /* #e5e7eb */
+}
+
+:root[data-theme='dark'] {
+  --bg: 11 12 15;        /* #0b0c0f */
+  --fg: 243 244 246;     /* #f3f4f6 */
+  --muted: 156 163 175;  /* #9ca3af */
+  --card: 17 19 24;      /* #111318 */
+  --border: 31 41 55;    /* #1f2937 */
+}
+
+* { outline-color: theme(colors.brand.DEFAULT); }
+
+.card {
+  @apply rounded-xl bg-card shadow-soft border border-border;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-colors;
+}
+.btn-primary {
+  @apply bg-brand text-white hover:bg-brand-dark focus:ring-2 focus:ring-brand/40;
+}
+.btn-ghost {
+  @apply bg-transparent text-fg hover:bg-border/40;
+}
+.btn-danger {
+  @apply bg-danger text-white hover:bg-red-600;
+}
+
+.input {
+  @apply rounded-lg border border-border bg-card px-3 py-2 focus:ring-2 focus:ring-brand/40;
+}
+
+.progress {
+  @apply h-2 w-full overflow-hidden rounded-full bg-border;
+}
+.progress > span {
+  @apply block h-full bg-brand transition-all;
+}

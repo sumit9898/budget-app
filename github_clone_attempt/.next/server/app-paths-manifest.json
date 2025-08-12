@@ -1,0 +1,6 @@
+{
+  "/page": "app/page.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/api/convert/route": "app/api/convert/route.js",
+  "/api/events/[jobId]/route": "app/api/events/[jobId]/route.js"
+}

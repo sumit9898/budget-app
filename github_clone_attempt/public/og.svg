@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a84ff"/>
+      <stop offset="1" stop-color="#34c759"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <g fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif">
+    <text x="80" y="180" font-size="72" font-weight="700">iWork ➜ Office Converter</text>
+    <text x="80" y="260" font-size="36" opacity="0.9">Pages · Numbers · Keynote → Word · Excel · PowerPoint</text>
+    <rect x="80" y="320" width="1040" height="200" rx="20" ry="20" fill="rgba(255,255,255,0.15)"/>
+    <text x="120" y="400" font-size="28">Drop your iWork files here • Output format: docx/xlsx/pptx/pdf</text>
+  </g>
+</svg>
+
